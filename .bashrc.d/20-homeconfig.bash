@@ -1,1 +1,1 @@
-alias homeconfig='git --git-dir=/home/den2pal/.homeconfig.git/ --work-tree=/home/den2pal'
+alias homeconfig='git --git-dir=$HOME/.homeconfig.git/ --work-tree=$HOME'
