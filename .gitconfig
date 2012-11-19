@@ -1,0 +1,7 @@
+[user]
+	name = Nikolaus Demmel
+	email = nikolaus@nikolaus-demmel.de
+[core]
+	excludesfile = /home/den2pal/.gitexclude
+[color]
+	ui = true
