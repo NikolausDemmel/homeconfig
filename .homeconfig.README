@@ -1,0 +1,60 @@
+Source: http://sursolid.com/managing-home-dotfiles-with-git-and-github
+
+
+
+
+
+First time setup
+
+$ cd ~
+
+$ mkdir .homeconfig.git
+
+$ echo "alias homeconfig='git --git-dir=$HOME/.homeconfig.git/ --work-tree=$HOME'" >> .bashrc
+
+$ source .bashrc
+
+$ homeconfig init
+
+$ homeconfig add .bash_profile .bashrc .bash_aliases
+
+$ homeconfig commit -m 'Initial commit'
+
+$ homeconfig remote add origin git@github.com:GITHUB_USERNAME/homeconfig.git
+
+$ homeconfig push origin master
+
+
+
+
+
+If you get an error when running config pull to the effect of “You asked me to pull without...” run the following:
+
+$ echo -e '[branch "master"]\n remote = origin\n merge = refs/heads/master' >> ~/.homeconfig.git/config
+
+
+
+
+
+Setup configuration on second machine
+
+Add your public keys to GitHub (if you haven’t done so already).
+
+$ cd ~
+
+$ mv .bash_profile .bash_profile.bak
+
+$ git clone git@github.com:GITHUB_USERNAME/homeconfig.git homeconfig.git
+
+$ mv homeconfig.git/.git .homeconfig.git
+
+$ shopt -s dotglob
+
+$ mv -i homeconfig.git/* .
+
+$ rmdir homeconfig.git
+
+
+
+
+
