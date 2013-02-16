@@ -7,4 +7,6 @@ if [ -f $UVM_FOLDER/setup.sh ] ; then
 fi
 
 export UVM_NO_COLORGCC=
+export UVM_ROS=
+export UVM_BUILD_SHARED_ONLY=
 export UVM_MUELLEIMER=~/work/UVM/uvm_muelleimer/ubuntu_gcc_463_12.04__64bit_x64
