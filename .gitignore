@@ -51,3 +51,11 @@ Desktop/
 Downloads/
 local/
 work/
+.VirtualBox/
+.macromedia/
+.nvidia-settings-rc
+.thunderbird/
+.vim/
+Pictures/
+VirtualBox VMs/
+eclipse-workspace/
