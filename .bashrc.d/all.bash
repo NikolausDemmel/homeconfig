@@ -3,3 +3,4 @@
 . ~/.bashrc.d/50-path.bash
 . ~/.bashrc.d/60-ros.bash
 . ~/.bashrc.d/70-uvm.bash
+. ~/.bashrc.d/80-cuda.bash

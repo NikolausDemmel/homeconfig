@@ -5,3 +5,7 @@
 	excludesfile = ~/.gitexclude
 [color]
 	ui = true
+[credential "svncvpr.informatik.tu-muenchen.de/git/"]
+	username = demmeln
+[credential]
+	helper = cache --timeout=3600
